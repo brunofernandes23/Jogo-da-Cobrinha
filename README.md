@@ -5,7 +5,7 @@ Nesse projeto foi criado um jogo da cobrinha de design simples, porém muito div
 Espero que gostem!
 
 Abra o jogo aqui:
-
+https://laughing-northcutt-21674e.netlify.app
 
 
 Code is life! xD
