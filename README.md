@@ -1,10 +1,10 @@
-Olá! Aqui é o Bruno Fernandes! 
+Hi! This is Bruno Fernandes!
 
-Nesse projeto foi criado um jogo da cobrinha de design simples, porém muito divertido! Pude aprender um pouco mais sobre laços de repetição e funções!
+In this project, a snake game with a simple design, but a lot of fun, was created! I was able to learn a little more about loops and repeat functions!
 
-Espero que gostem!
+Hope you like it!
 
-Abra o jogo aqui:
+Open the game here:
 https://laughing-northcutt-21674e.netlify.app
 
 
