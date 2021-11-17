@@ -12,12 +12,12 @@ let food = {
     y: Math.floor(Math.random() * 15 + 1) * box
 }
 
-function criarBG() {
+function createBG() {
     context.fillStyle = "lightblue";
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
-function criarCobra() {
+function createSnake() {
     for(i=0; i < snake.length; i++){
         context.fillStyle = "blue";
         context.fillRect(snake[i].x, snake[i].y, box, box);
@@ -38,7 +38,7 @@ function update(event) {
     if(event.keyCode == 40 && direction != "up") direction = "down";
 }
 
-function iniciarJogo() {
+function startGame() {
     if(snake[0].x > 15 * box && direction == "right") snake[0].x = 0;
     if(snake[0].x < 0 && direction == "left") snake[0].x = 16 * box;
     if(snake[0].y > 15 * box && direction == "down") snake[0].y = 0;
@@ -46,13 +46,13 @@ function iniciarJogo() {
 
     for(i = 1; i < snake.length; i++) {
         if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
-            clearInterval(jogo);
-            alert("Fim de Jogo :(");
+            clearInterval(game);
+            alert("Game Over :(");
         }
     }
 
-    criarBG();
-    criarCobra();
+    createBG();
+    createSnake();
     drawFood();
     
     let snakeX = snake[0].x;
@@ -80,5 +80,5 @@ function iniciarJogo() {
 
 }
 
-let jogo = setInterval(iniciarJogo, 100);
+let game = setInterval(startGame, 100);
 
